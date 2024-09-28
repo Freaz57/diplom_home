@@ -1,0 +1,75 @@
+.background {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.button {
+    background: none;
+    width: 50px;
+    border: none;
+    z-index: 5;
+    position: fixed;
+    right: 5px;
+    top: 10px;
+}
+
+.button img {
+    width: 100%;
+
+}
+
+.nav {
+    font-size: 24px;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(30, 23, 69, 0.95);
+    border-radius: 20px;
+    height: 30%;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.1s ease;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.navOpen {
+    width: 230px;
+}
+
+.links {
+    list-style-type: none;
+    margin: 15px;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.linksOpen {
+    opacity: 1;
+}
+
+.link {
+    background: none;
+    border: none;
+    color: white;
+}
+
+.cart__shop {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    color: #fff;
+}

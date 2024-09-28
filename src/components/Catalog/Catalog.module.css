@@ -1,0 +1,45 @@
+.title {
+    margin: 48px 0;
+    color: #444B58;
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 56px;
+}
+
+
+
+.container {
+    padding: 0 10px;
+    max-width: 1180px;
+    margin: 15px auto 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 33px;
+    padding-bottom: 53px;
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .container {
+        padding: 0;
+        gap: 0;
+    }
+}

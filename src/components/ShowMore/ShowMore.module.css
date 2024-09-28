@@ -1,0 +1,37 @@
+.button {
+    margin-top: 38px;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+
+    text-decoration: none;
+    color: #ffffff;
+
+    padding: 20px 50px;
+    background-color: #F14F4F;
+    border-radius: 4px;
+
+    display: flex;
+    max-width: max-content;
+    text-align: center;
+    align-self: center;
+    cursor: pointer;
+
+    font-family: 'Jost';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    transition: 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: #8C2828;
+}
+
+@media screen and (min-width: 768px) {
+    .button {
+        padding: 20px 50px;
+    }
+}

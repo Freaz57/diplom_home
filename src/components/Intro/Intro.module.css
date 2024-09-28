@@ -1,0 +1,72 @@
+.intro {
+    background-color: #484283;
+    height: 500px;
+}
+
+.title {
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Jost';
+    font-weight: 400;
+    line-height: 140%;
+    text-align: start;
+    padding-top: 114px;
+    font-size: 36px;
+}
+
+.text {
+    margin: 0;
+    color: #ffffff;
+    padding-top: 33px;
+    padding-bottom: 32px;
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+
+.container {
+    padding: 0 10px;
+    margin: 0 auto;
+    max-width: 1180px;
+    background-image: url(../../assets/images/logo_background.png);
+    background-repeat: no-repeat;
+    padding-bottom: 93px;
+    background-position: center bottom 92px;
+    border-top: 1px solid #ffffff;
+
+}
+
+@media screen and (max-width: 1100px) {
+
+    .container {
+        background-size:contain;
+        background-position: center bottom 60%;
+    }
+}
+
+.button {
+    text-decoration: none;
+    color: #ffffff;
+    border: none;
+
+    padding: 19px 48px;
+    background-color: #F14F4F;
+    border-radius: 4px;
+
+    display: flex;
+    max-width: max-content;
+    text-align: center;
+    cursor: pointer;
+
+    font-family: 'Jost';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    transition: 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: #8C2828;
+}

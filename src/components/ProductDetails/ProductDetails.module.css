@@ -1,0 +1,268 @@
+.productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    max-width: 1180px;
+    margin: 30px auto 138px;
+    gap: 30px;
+
+}
+
+.imageGallery {
+    flex: 1;
+}
+
+.mainImage {
+    margin-bottom: 5px;
+    width: 520px;
+    height: 520px;
+    border-radius: 4px;
+}
+
+.thumbnailContainer {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 530px;
+}
+
+.thumbnailContainer::-webkit-scrollbar {
+    height: 0;
+}
+
+.thumbnailContainer::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+
+.thumbnail {
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+
+    border-radius: 4px;
+}
+
+
+.thumbnailActive {
+    width: 67px;
+    height: 67px;
+    border: 3px solid #C4C4C4;
+}
+
+.productDetails {
+    flex: 1.5;
+
+}
+
+.productTitle {
+    font-family: 'Jost';
+    font-size: 36px;
+    font-weight: 600;
+    color: #444B58;
+    margin-bottom: 10px;
+    margin-top: 7px;
+}
+
+.productCategory {
+    font-family: 'Jost';
+    color: #646464;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.ratingAndStock {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.ratingInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.rating {
+    display: flex;
+    gap: 9px;
+}
+
+.grayStar {
+    filter: grayscale(100%) brightness(1.8);
+    fill: #D5D5D5;
+}
+
+
+
+.stockStatus {
+    color: #F14F4F;
+    font-weight: 500;
+    font-family: 'Jost';
+    font-size: 18px;
+    border-top: 1px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    position: relative;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.productDescription {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: #444B58;
+    font-weight: 400;
+    font-family: 'Jost';
+    font-size: 18px;
+    line-height: 30px;
+;
+}
+
+.warrantyAndShipping {
+    margin-top: 27px;
+    margin-bottom: 26px;
+    color: #646464;
+    font-weight: 400;
+    font-family: 'Jost';
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.priceAndDiscount {
+    background: rgba(0, 0, 0, 0.04);
+    display: flex;
+    align-items: center;
+    gap: 65px;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    padding: 9px 5px 12px 30px;
+    border-radius: 6px;
+}
+
+.fullPrice {
+    position: relative;
+    padding-right: 15px;
+    border-right: 1px solid #D5D5D5;
+}
+
+
+
+.price {
+    margin: 0;
+    font-family: 'Jost';
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #444B58;
+}
+
+.oldPrice {
+    margin: 0;
+    font-family: 'Jost';
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: line-through;
+    color: #646464;
+}
+
+.discount {
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 16px;
+    color: #444B58;
+}
+
+.procent {
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 16px;
+    color: #444B58;
+}
+
+.addToCartButton {
+    margin-left: 5px;
+    text-decoration: none;
+    color: #ffffff;
+
+    padding: 19px 48px;
+    background-color: #F14F4F;
+    border: none;
+    border-radius: 4px;
+
+    display: flex;
+    max-width: max-content;
+    text-align: center;
+    cursor: pointer;
+
+    font-family: 'Jost';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    transition: 0.2s ease-in-out;
+}
+
+.addToCartButton:hover {
+    background-color: #8C2828;
+}
+
+@media screen and (max-width: 1250px) {
+    .addToCartButton {
+        margin-left: 0;
+        min-width: 174.91px;
+    }
+
+    .priceAndDiscount {
+        justify-content: space-between;
+        gap: 38px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .imageGallery {
+        display: flex;
+        flex: 0;
+        flex-direction: column;
+    }
+
+    .productContainer {
+        justify-content: center;
+    }
+
+    .mainImage {
+        height: auto;
+        width: 80vw;
+
+    }
+
+    .thumbnailContainer {
+        gap: 10px;
+        width: 80vw;
+        /* max-width: 530px; */
+    }
+
+    .priceAndDiscount {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 20px;
+        justify-content: center;
+        padding: 5px;
+        border-radius: 6px;
+    }
+
+    .fullPrice::after {
+        display: none;
+    }
+
+    .ratingInfo {
+        flex-wrap: wrap;
+    }
+}

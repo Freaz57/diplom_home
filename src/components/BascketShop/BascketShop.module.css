@@ -1,0 +1,239 @@
+.cartContainer {
+    padding: 0 10px;
+    max-width: 1180px;
+    margin: 15px auto 0;
+}
+
+.cartInner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.title {
+    font-family: 'Jost';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #444B58;
+}
+
+.itemsCart {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    width: 776px;
+    border: 1px solid #B2B5BB;
+    border-radius: 4px;
+}
+
+.cartItem.inactive .itemImage,
+.cartItem.inactive .itemInfo span
+{
+    opacity: 0.4;
+}
+
+
+.cartItem {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /*добавил */
+    margin: 0 40px 10px 40px;
+    padding: 12px;
+    transition: all .2s ease-in-out;
+}
+
+.cartItem:first-child {
+    margin-top: 20px;
+}
+
+.cartItem:last-child {
+    margin-bottom: 18px;
+}
+
+.cartItem:hover {
+    background-color: #F6F6F6;
+    border-radius: 4px;
+}
+
+.itemImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.itemDetails {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.itemInfo {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.itemFullInfo {
+    width: 210px;
+}
+
+.itemInfo:hover .itemName {
+    border-bottom: 1px solid #444B58;
+}
+
+
+.itemName {
+    font-family: 'Jost';
+    font-size: 16px;
+    font-weight: 600;
+    color: #444B58;
+    line-height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s linear;
+}
+
+.itemPrice {
+    font-family: 'Jost';
+    font-size: 18px;
+    font-weight: 400;
+    color: #444B58;
+    line-height: 26px;
+}
+
+.quantityControl {
+    display: flex;
+    align-items: center;
+
+}
+
+.shopContent {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 0;
+    margin-right: 12px;
+}
+
+.marginTop {
+    margin-top: 0;
+}
+
+.controlGroup {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 37px;
+    margin-top: 0;
+}
+
+
+
+.deleteButton {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: none;
+    border-bottom: 1px solid transparent;
+    transition: all .2s linear;
+}
+
+.deleteButton:hover .deleteText {
+    color: #444B58;
+    border-bottom: 1px solid #444B58;
+}
+
+.deleteText {
+    font-size: 14px;
+    font-weight: 400;
+    color: #B2B5BB;
+    transition: color .2s linear, border-bottom .2s linear;
+}
+
+.summary {
+    margin-top: 22px;
+    width: 30%;
+}
+
+.summaryItem {
+    display: flex;
+    margin-bottom: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summaryItem:nth-child(3) {
+    margin-top: 23px;
+    padding-top: 13px;
+    border-top: 1px solid #B2B5BB;
+}
+
+.summaryCount {
+    margin: 0;
+    font-family: 'Jost';
+    font-size: 20px;
+    font-weight: 400;
+    color: #B2B5BB;
+}
+
+.summaryPrice {
+    margin: 0;
+    font-family: 'Jost';
+    font-size: 20px;
+    font-weight: 600;
+    color: #B2B5BB;
+}
+
+.summaryTotal {
+    margin: 0;
+    font-family: 'Jost';
+    font-size: 24px;
+    font-weight: 600;
+    color: #B2B5BB;
+
+}
+
+.summaryTotalItems {
+    font-family: 'Jost';
+    font-size: 20px;
+    font-weight: 400;
+    color: #444B58;
+}
+
+.summaryDiscount {
+    font-family: 'Jost';
+    font-size: 20px;
+    font-weight: 700;
+    color: #444B58;
+}
+
+.summaryTotalPrice {
+    font-family: 'Jost';
+    font-size: 24px;
+    font-weight: 700;
+    color: #444B58;
+}
+
+.emptyCart {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Jost';
+    font-size: 24px;
+    font-weight: 600;
+    color: #B2B5BB;
+}
+
+@media screen and (max-width: 560px){
+    .cartItem{
+        padding: 2px;
+        margin: 5px 2px;
+    }
+
+    .controlGroup{
+        gap: 0;
+    }
+}

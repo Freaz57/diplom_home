@@ -1,0 +1,42 @@
+.faq {
+    background: #484283;
+}
+
+.title {
+    margin: 0;
+    color: #ffff;
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 56px;
+    margin-top: 54px;
+    margin-bottom: 18px;
+}
+
+
+.container {
+    padding: 0 10px;
+    margin: 0 auto;
+    max-width: 880px;
+    margin-bottom: 68px;
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .container {
+        padding: 0;
+    }
+}

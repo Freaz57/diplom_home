@@ -1,0 +1,97 @@
+.image {
+    width: 100%;
+    max-width: 370px;
+    max-height: 300px;
+    transition: filter 0.3s ease;
+}
+
+.title {
+    margin: 0;
+    color: #444B58;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 9px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    border-bottom: 1px solid transparent;
+}
+
+.price {
+    margin: 0;
+    color: #444B58;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 5px;
+}
+
+.card {
+    width: 368px;
+    height: 370px;
+    list-style-type: none;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.cardInner {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+}
+
+.detailsText {
+    font-family: "Jost", sans-serif;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    opacity: 60%;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.card:hover .title {
+    border-bottom: 1px solid;
+}
+
+.card:hover .image {
+    filter: brightness(75%);
+}
+
+.list {
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 38px;
+    row-gap: 16px;
+    max-width: 1180px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+}
+

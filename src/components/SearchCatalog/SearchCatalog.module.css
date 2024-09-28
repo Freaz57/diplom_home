@@ -1,0 +1,21 @@
+.search_catalog {
+    margin-bottom: 15px;
+}
+
+.search_catalog__input {
+    padding: 0 20px;
+    width: calc(100% - 40px);
+    height: 62px;
+    border-radius: 4px;
+    border: none;
+    background: #F6F6F6;
+    color: #444B58;
+}
+
+.search_catalog__input::placeholder {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 16px;
+    line-height: 22px;
+    color: #b2b5bb; /* Цвет placeholder */
+}
