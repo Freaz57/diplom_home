@@ -28,7 +28,6 @@ const SignIn = () => {
 
         try {
             const response = await userAuth({ username, password }).unwrap();
-            console.log(response)
             localStorage.setItem('token', response.accessToken);
             dispatch(setUser(response));
             navigate('/');
